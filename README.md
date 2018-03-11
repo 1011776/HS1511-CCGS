@@ -19,3 +19,9 @@ This shows you all the changes you have made:
 git status
 
 IMPORTANT NOTE - don't upload assignments to the GitHub
+
+TODO:
+  create a template.c
+  fix up formatting in code
+  create subfolders for each activity
+  work on README.md
