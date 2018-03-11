@@ -12,32 +12,32 @@
 int isLeapYear (int year);
 
 int main () {
-	int input;
-	printf ("please enter the year you are interested in\n");
-	scanf ("%d", &input);
+    int input;
+    printf ("please enter the year you are interested in\n");
+    scanf ("%d", &input);
 
-	if (isLeapYear (input) == 1) {
-		printf ("%d is a leap year!\n", input);
-	} else {
-		printf ("%d is not a leap year!\n", input);
-	}
+    if (isLeapYear (input) == 1) {
+        printf ("%d is a leap year!\n", input);
+    } else {
+        printf ("%d is not a leap year!\n", input);
+    }
 
-	return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
 
 int isLeapYear (int year) {	
-	assert (year > START_OF_GREG_CALENDAR);
-	int output;
+    assert (year > START_OF_GREG_CALENDAR);
+    int output;
 
-	if (year % 400 == 0) {
-		output = 1;
-	} else if (year % 100 == 0) {
-		output = 0;
-	} else if (year % 4 == 0) {
-		output = 1;
-	} else {
-		output = 0;
-	}
+    if (year % 400 == 0) {
+        output = 1;
+    } else if (year % 100 == 0) {
+        output = 0;
+    } else if (year % 4 == 0) {
+        output = 1;
+    } else {
+        output = 0;
+    }
 	
-	return output;
+    return output;
 }
