@@ -17,3 +17,5 @@ git pull
 
 This shows you all the changes you have made:
 git status
+
+IMPORTANT NOTE - don't upload assignments to the GitHub
